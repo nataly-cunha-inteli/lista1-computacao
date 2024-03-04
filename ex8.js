@@ -1,33 +1,40 @@
+// Criação da classe. Toda classe tem incluída por padrão um constructor, que pode ser vazio. Nesse caso, também irei configurá-lo manualmente:
 class Animal {
   constructor(nome, idade) {
+    // Declaração dos atributos de Animal
     this.nome = nome;
     this.idade = idade;
   }
 
   descrever() {
+    // Quando esse método for chamado, irá retornar uma mensagem contendo também um parâmetro nome e idade do animal.
     return `Olá! Esse é o ${this.nome}, com ${this.idade} anos de idade!`;
   }
 }
 
+// Criação de uma classe que estende a partir de outra (Animal)
 class Gato extends Animal {
-  constructor(nome, idade, cor){
+  constructor(nome, idade, cor) { // Dentro do constructor de uma classe-filho, tem que haver os métodos existentes já na classe-pai e os outros atributos a serem adicionados
     super(nome, idade); // aqui recupera o constructor de Animal
-    this.cor = cor;
+    this.cor = cor; // aqui atribui um atributo extra
   }
 
   descrever() {
-    // Chama o método descrever() da classe pai usando super.descrever()
+    // Quando esse método for chamado, irá retornar uma mensagem contendo também um parâmetro nome, idade e cor do gato.
     return `Olá! Este é o ${this.nome}, com ${this.idade} anos de idade e cor ${this.cor}!`;
   }
 
+  // Apenas um método para retorno de uma string, que será o som do gato
   miar() {
     return`Miauuuuuu`
   }
 }
 
+// Criação de um novo objeto de Animal, cachorro, e um novo objeto de Gato, chamado gato. Os valores de entrada devem ser coerentes com a ordem dos parâmetros de constructors
 const cachorro = new Animal("Jubileu", 7);
 const gato = new Gato("Simba", 4, "Siamês");
 
+// Print do método descrever para cada animal, e print do método miar para o gato
 console.log(cachorro.descrever());
 console.log(gato.descrever());
 console.log(gato.miar());
