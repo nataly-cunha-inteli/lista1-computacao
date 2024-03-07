@@ -23,11 +23,11 @@ print(a)
 
 Escolha a opção que responde corretamente:
 
-a) Imprime os números pares de 1 a 10. <----- RESPOSTA
+a) Imprime os números pares de 1 a 10. 
 
 b) Imprime os números ímpares de 1 a 10.
 
-c) Imprime os números pares de 2 a 10.
+c) Imprime os números pares de 2 a 10. <----- RESPOSTA
 
 d) Imprime os números ímpares de 2 a 10.
 
@@ -55,11 +55,11 @@ ______
 
 Escolha a opção que responde corretamente:
 
-A) 18
+A) 18 <----- RESPOSTA
 
 B) 16
 
-C) 14 <----- RESPOSTA
+C) 14 
 
 D) 12
 
