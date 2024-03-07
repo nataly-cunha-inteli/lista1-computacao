@@ -7,8 +7,8 @@ class Animal {
   }
 
   descrever() {
-    // Quando esse método for chamado, irá retornar uma mensagem contendo também um parâmetro nome e idade do animal.
-    return `Olá! Esse é o ${this.nome}, com ${this.idade} anos de idade!`;
+    // Quando esse método for chamado, irá exibir uma mensagem no console contendo também um parâmetro nome e idade do animal.
+    console.log("Olá! Esse é o " + this.nome + ", com " + this.idade + " anos de idade!");
   }
 }
 
@@ -21,12 +21,12 @@ class Gato extends Animal {
 
   descrever() {
     // Quando esse método for chamado, irá retornar uma mensagem contendo também um parâmetro nome, idade e cor do gato.
-    return `Olá! Este é o ${this.nome}, com ${this.idade} anos de idade e cor ${this.cor}!`;
+    console.log("Olá! Este é o " + this.nome + ", com " + this.idade + " anos de idade e cor " + this.cor + "!");
   }
 
   // Apenas um método para retorno de uma string, que será o som do gato
   miar() {
-    return`Miauuuuuu`
+    console.log("Miauuuuuu");
   }
 }
 
@@ -35,6 +35,6 @@ const cachorro = new Animal("Jubileu", 7);
 const gato = new Gato("Simba", 4, "Siamês");
 
 // Print do método descrever para cada animal, e print do método miar para o gato
-console.log(cachorro.descrever());
-console.log(gato.descrever());
-console.log(gato.miar());
+cachorro.descrever();
+gato.descrever();
+gato.miar();

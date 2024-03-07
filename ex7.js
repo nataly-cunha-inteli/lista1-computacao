@@ -7,8 +7,8 @@ class Animal {
   }
 
   descrever() {
-    // Quando esse método for chamado, irá retornar uma mensagem contendo também um parâmetro nome e idade do animal.
-    return `Olá! Esse é o ${this.nome}, com ${this.idade} anos de idade!`;
+    // Quando esse método for chamado, irá exibir uma mensagem no console contendo também um parâmetro nome e idade do animal.
+    console.log("Olá! Esse é o " + this.nome + ", com " + this.idade + " anos de idade!");
   }
 }
 
@@ -17,4 +17,5 @@ const cachorro = new Animal("Jubileu", 7);
 const gato = new Animal("Simba", 4);
 
 // Printa as características de cachorro e gato a partir da execução do método descrever() para cada
-console.log(cachorro.descrever() + " " + gato.descrever());
+cachorro.descrever();
+gato.descrever();

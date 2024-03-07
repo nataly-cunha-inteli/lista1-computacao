@@ -13,7 +13,7 @@ class SomadorDeNotas {
 
   // método que printa o valor de total
   verTotal() {
-    console.log(this.total);
+    console.log("Total de notas: " + this.total);
   }
 }
 
