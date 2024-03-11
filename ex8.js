@@ -16,7 +16,7 @@ class Animal {
 class Gato extends Animal {
   constructor(nome, idade, cor) { // Dentro do constructor de uma classe-filho, tem que haver os métodos existentes já na classe-pai e os outros atributos a serem adicionados
     super(nome, idade); // aqui recupera o constructor de Animal
-    this.cor = cor; // aqui atribui um atributo extra
+    this.cor = cor; // aqui cria-se um atributo extra
   }
 
   descrever() {
@@ -24,13 +24,13 @@ class Gato extends Animal {
     console.log("Olá! Este é o " + this.nome + ", com " + this.idade + " anos de idade e cor " + this.cor + "!");
   }
 
-  // Apenas um método para retorno de uma string, que será o som do gato
+  // Apenas um método para a entrega de uma mensagem no console, que será o som do gato
   miar() {
     console.log("Miauuuuuu");
   }
 }
 
-// Criação de um novo objeto de Animal, cachorro, e um novo objeto de Gato, chamado gato. Os valores de entrada devem ser coerentes com a ordem dos parâmetros de constructors
+// Criação de um novo objeto de Animal, cachorro, e um novo objeto de Gato, chamado gato. Os valores de entrada devem ser coerentes com a ordem dos parâmetros dos constructors
 const cachorro = new Animal("Jubileu", 7);
 const gato = new Gato("Simba", 4, "Siamês");
 

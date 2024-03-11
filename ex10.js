@@ -5,7 +5,7 @@ class Funcionario {
     // Declaração dos atributos de Funcionario
     this.nome = nome;
     this.idade = idade;
-    this.salarioBase = salarioBase; // no meu entendimento, compreendi que o salárioBase é o valor da hora. por isso, vou utilizá-lo para o cálculo do salário
+    this.salarioBase = salarioBase; // minha interpretação é que o salárioBase é o valor da hora. por isso, vou utilizá-lo para o cálculo do salário
     this.cargaHoraria = cargaHoraria; // no geral, cada funcionário terá sua carga horária que será utilizada para calcular seu salário final, então decidi colocar como atributo da classe-pai
 
     // Atributo salário que recebe o valor calculado dentro do método calcularSalario
